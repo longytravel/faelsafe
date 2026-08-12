@@ -218,7 +218,7 @@ export default function RedesignDemo() {
               </span>
               <a
                 href={PHONE_HREF}
-                className="font-display text-lg md:text-2xl text-accent tnum tracking-tight"
+                className="font-display text-lg md:text-2xl text-accent-ink tnum tracking-tight"
               >
                 {PHONE_DISPLAY}
               </a>
@@ -342,7 +342,7 @@ export default function RedesignDemo() {
                     <h3 className="font-display text-[21px] text-ink leading-tight mb-1.5">
                       {s.title}
                     </h3>
-                    <p className="eyebrow text-accent mb-3">{s.standard}</p>
+                    <p className="eyebrow text-accent-ink mb-3">{s.standard}</p>
                     <p className="text-sm text-ink-secondary leading-relaxed mb-4">
                       {s.body}
                     </p>
@@ -452,7 +452,7 @@ export default function RedesignDemo() {
                 alt="Faelsafe Life Safety Ltd"
                 className="h-12 w-auto mb-5"
               />
-              <p className="font-display text-accent text-lg mb-4">
+              <p className="font-display text-accent-ink text-lg mb-4">
                 Don&apos;t Fael To Be Safe
               </p>
               <p className="text-sm text-ink-secondary leading-relaxed">

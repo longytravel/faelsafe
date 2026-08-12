@@ -24,11 +24,15 @@
   /* Ink */
   --color-ink: #32373c;            /* headings + primary text (their charcoal) */
   --color-ink-secondary: #4a4f54;  /* body copy */
-  --color-ink-muted: #7c8288;      /* eyebrows, metadata, labels */
+  --color-ink-muted: #666c72;      /* eyebrows, metadata, labels — 5.31:1 on white */
 
   /* Orange primary + charcoal secondary */
-  --color-accent: #f16b21;         /* Faelsafe orange — nav, buttons, numerals */
+  --color-accent: #f16b21;         /* Faelsafe orange — fills, rules, dark-bg text */
   --color-accent-hover: #d4551a;   /* hover / pressed */
+  /* Their orange is only 3.06:1 on white, which fails WCAG AA for text under
+     ~24px. This is the same hue pushed darker to 5.29:1, for SMALL orange text
+     on light backgrounds only. Fills and rules keep the true brand orange. */
+  --color-accent-ink: #b8480c;
   --color-highlight: #32373c;      /* charcoal — secondary editorial accent */
   --color-highlight-tint: #f0f1f2; /* charcoal tint background */
 
@@ -82,9 +86,10 @@ body {
   font-variant-numeric: tabular-nums lining-nums;
 }
 
-/* Orange underline-on-hover link affordance (opt-in). */
+/* Orange underline-on-hover link affordance (opt-in). Uses the darkened orange
+   because these always sit on a light background. */
 .fs-link {
-  color: var(--color-accent);
+  color: var(--color-accent-ink);
   text-decoration: none;
 }
 .fs-link:hover {

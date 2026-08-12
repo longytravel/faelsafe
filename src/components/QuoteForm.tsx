@@ -128,7 +128,7 @@ export default function QuoteForm() {
           <div key={f.id}>
             <label htmlFor={f.id} className="eyebrow text-ink-muted block mb-1.5">
               {f.label}
-              {f.required && <span className="text-accent ml-1">*</span>}
+              {f.required && <span className="text-accent-ink ml-1">*</span>}
             </label>
             <input
               id={f.id}

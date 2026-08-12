@@ -139,7 +139,7 @@ export default function Home() {
                   href={r.href}
                   className="group bg-card border border-rule rounded-[2px] p-7 flex flex-col hover:border-accent hover:-translate-y-px transition-all duration-150"
                 >
-                  <div className="eyebrow text-accent tnum mb-4">{r.number}</div>
+                  <div className="eyebrow text-accent-ink tnum mb-4">{r.number}</div>
                   <p className="eyebrow text-ink-muted mb-3">{r.eyebrow}</p>
                   <h3 className="font-display text-[21px] text-ink leading-tight mb-3">
                     {r.title}
@@ -148,7 +148,7 @@ export default function Home() {
                   <p className="text-sm text-ink-secondary leading-relaxed flex-1">
                     {r.body}
                   </p>
-                  <span className="eyebrow text-accent mt-6 pt-4 border-t border-rule group-hover:text-accent-hover">
+                  <span className="eyebrow text-accent-ink mt-6 pt-4 border-t border-rule group-hover:text-accent-hover">
                     {r.cta} →
                   </span>
                 </a>

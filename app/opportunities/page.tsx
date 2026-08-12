@@ -218,15 +218,18 @@ const tiers: { key: Tier; title: string; note: string; blurb: string }[] = [
 function IdeaCard({ idea }: { idea: Idea }) {
   return (
     <article className="bg-card border border-rule rounded-[2px] p-7 flex flex-col hover:border-accent hover:-translate-y-px transition-all duration-150">
-      <div className="eyebrow text-accent tnum mb-4">
-        {idea.number.toString().padStart(2, "0")}
+      {/* Number and editorial note share one row so the titles line up across
+          a row of cards whether or not a card carries a note. */}
+      <div className="flex items-start justify-between gap-3 mb-4 min-h-[16px]">
+        <span className="eyebrow text-accent-ink tnum">
+          {idea.number.toString().padStart(2, "0")}
+        </span>
+        {idea.note && (
+          <span className="eyebrow text-ink border-l-2 border-accent pl-2 text-right">
+            {idea.note}
+          </span>
+        )}
       </div>
-
-      {idea.note && (
-        <p className="eyebrow text-ink border-l-2 border-accent pl-2 mb-3">
-          {idea.note}
-        </p>
-      )}
 
       <p className="eyebrow text-ink-muted mb-3">{idea.category}</p>
 

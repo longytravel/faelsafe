@@ -163,7 +163,7 @@ export default function VibeCoding() {
               </div>
 
               <div className="bg-card border-2 border-accent rounded-[2px] p-7">
-                <h3 className="eyebrow text-accent mb-6">Working this way</h3>
+                <h3 className="eyebrow text-accent-ink mb-6">Working this way</h3>
                 <dl className="space-y-4">
                   {comparison.now.map((row) => (
                     <div key={row.label} className="pb-4 border-b border-rule last:border-0 last:pb-0">
@@ -188,7 +188,7 @@ export default function VibeCoding() {
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
               {steps.map((s, i) => (
                 <div key={s.title} className="bg-card border border-rule rounded-[2px] p-6 flex flex-col">
-                  <div className="eyebrow text-accent tnum mb-4">
+                  <div className="eyebrow text-accent-ink tnum mb-4">
                     {String(i + 1).padStart(2, "0")}
                   </div>
                   <p className="eyebrow text-ink-muted mb-3">{s.phase}</p>
@@ -228,7 +228,7 @@ export default function VibeCoding() {
                 <ul className="space-y-3">
                   {goodAt.map((g) => (
                     <li key={g} className="text-ink-secondary leading-relaxed pl-5 relative">
-                      <span className="absolute left-0 top-0 text-accent">—</span>
+                      <span className="absolute left-0 top-0 text-accent-ink">—</span>
                       {g}
                     </li>
                   ))}

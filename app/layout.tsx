@@ -29,7 +29,15 @@ export const metadata: Metadata = {
     description:
       "Ten commercial ideas, a plain-English explainer, and a rebuilt faelsafe.co.uk homepage.",
     type: "website",
+    locale: "en_GB",
   },
+  twitter: { card: "summary_large_image" },
+  /**
+   * This is a private pitch for a named company, including a critical review of
+   * their live site. The link works for anyone it is sent to; it just should not
+   * turn up in a search for "Faelsafe". Remove this to make it indexable.
+   */
+  robots: { index: false, follow: false },
 };
 
 export const viewport: Viewport = {

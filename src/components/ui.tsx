@@ -97,7 +97,7 @@ function NavStrip({ activePage }: { activePage: ActivePage }) {
                   aria-current={isActive ? "page" : undefined}
                   className={`flex items-center h-12 px-4 text-sm font-semibold border-b-[3px] transition-colors ${
                     l.highlight
-                      ? "bg-white text-accent border-brand-charcoal hover:bg-brand-charcoal hover:text-white hover:border-white"
+                      ? "bg-white text-accent-ink border-brand-charcoal hover:bg-brand-charcoal hover:text-white hover:border-white"
                       : isActive
                         ? "text-white border-white"
                         : "text-white/90 border-transparent hover:bg-accent-hover hover:text-white"

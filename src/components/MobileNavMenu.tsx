@@ -95,9 +95,9 @@ export default function MobileNavMenu({ activePage }: { activePage: ActivePage }
                       href={l.href}
                       className={`flex items-center px-5 py-4 text-sm font-semibold transition-colors ${
                         l.highlight
-                          ? "text-accent"
+                          ? "text-accent-ink"
                           : l.page === activePage
-                            ? "text-accent border-l-[3px] border-accent pl-[17px]"
+                            ? "text-accent-ink border-l-[3px] border-accent pl-[17px]"
                             : "text-ink-secondary hover:text-accent"
                       }`}
                       onClick={() => setOpen(false)}

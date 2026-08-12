@@ -195,7 +195,7 @@ const groups: Group[] = [
 
 const severityStyle = {
   critical: "text-danger border-danger",
-  high: "text-accent border-accent",
+  high: "text-accent-ink border-accent",
   medium: "text-ink-muted border-rule-strong",
 } as const;
 
@@ -330,7 +330,7 @@ export default function WebsiteReview() {
                             </p>
                           </div>
                           <div className="border-l-2 border-accent pl-4">
-                            <p className="eyebrow text-accent mb-2">What it costs you</p>
+                            <p className="eyebrow text-accent-ink mb-2">What it costs you</p>
                             <p className="text-sm text-ink-secondary leading-relaxed">
                               {f.cost}
                             </p>
@@ -381,7 +381,7 @@ export default function WebsiteReview() {
                 },
               ].map((s) => (
                 <div key={s.n} className="bg-card border border-rule rounded-[2px] p-6 flex flex-col">
-                  <div className="eyebrow text-accent tnum mb-4">{s.n}</div>
+                  <div className="eyebrow text-accent-ink tnum mb-4">{s.n}</div>
                   <h3 className="font-display text-[18px] text-ink leading-tight mb-3">
                     {s.title}
                   </h3>
