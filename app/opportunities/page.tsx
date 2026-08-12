@@ -195,83 +195,84 @@ const ideas: Idea[] = [
     tier: "signals",
     category: "Planning data",
     title: "Planning Application Radar",
-    hook: "Every building in Yorkshire that will need fire systems, twelve months before it goes to tender.",
+    hook: "The buildings that will need fire systems, spotted while they're still drawings.",
     description:
-      "Every council publishes its planning applications, in public, the day they're submitted. A new care home, a warehouse extension, an office converted to flats, a school block — each one is a fire alarm, an emergency lighting scheme, a sprinkler system and a distribution board, eighteen months out. This reads Leeds, Bradford, Wakefield, Kirklees and Calderdale every morning and flags the applications that mean work for you, with the applicant and the agent's contact details attached.",
+      "Every council publishes its planning applications publicly, the day they're validated. A 60-bed care home, a warehouse extension, offices converted to flats — each one is a fire alarm, an emergency lighting scheme, a sprinkler system and a distribution board, well before anyone writes a tender. This reads Leeds, Bradford, Wakefield, Kirklees and Calderdale daily and flags the ones that mean work for you, with the applicant and agent's name and registered address attached.",
     money:
-      "You would be talking to the developer while your competitors are still waiting for the tender to land in their inbox.",
+      "You would be having the conversation while your competitors are still waiting for a tender to land in their inbox.",
     stats: [
-      { value: "5+", label: "council portals read daily" },
-      { value: "12–18 mo", label: "ahead of the tender" },
-      { value: "Free", label: "public planning data" },
+      { value: "5", label: "council portals, 2 different systems" },
+      { value: "Name", label: "and address — not phone or email" },
+      { value: "Months", label: "ahead of the tender" },
     ],
-    note: "Earliest possible lead",
+    note: "Earliest lead — see the caveat",
   },
   {
     number: 12,
     tier: "signals",
     category: "Enforcement data",
     title: "Enforcement Notice Radar",
-    hook: "Buildings that have been legally ordered to fix their fire safety. Today.",
+    hook: "786 buildings in West Yorkshire are under a live fire safety enforcement notice right now.",
     description:
-      "When a fire authority serves an enforcement or prohibition notice, or the HSE prosecutes over electrical safety, that becomes a matter of public record. Behind every one is a building owner with a legal deadline, a compliance problem they cannot ignore, and usually no contractor lined up. This watches those public registers for your patch and tells you who they are while the notice is still fresh.",
+      "That number is real — we checked it. Fire authorities must keep a public register of every enforcement and prohibition notice they serve, and West Yorkshire publishes its own to the National Fire Chiefs Council register: 1,440 notices, 549 of them served in the last twelve months, each with the premises named, the responsible company named and a legal deadline attached. Add the HSE's public notices and prosecutions database for electrical work and you have a standing list of organisations legally required to fix precisely what you do.",
     money:
-      "There is no warmer lead in this trade than an organisation legally required to fix exactly what you do.",
+      "604 of those West Yorkshire notices are on high-rise flats, warehouses, care homes, hotels, schools and hospitals — your customer base exactly.",
     stats: [
-      { value: "Legally", label: "obliged to act" },
-      { value: "Named", label: "premises and duty holder" },
-      { value: "Weekly", label: "sweep of public registers" },
+      { value: "786", label: "notices in force in West Yorkshire" },
+      { value: "549", label: "served in the last 12 months" },
+      { value: "3–5 wks", label: "from served to published" },
     ],
-    note: "Sharpest lead there is",
+    note: "Verified — sharpest lead there is",
   },
   {
     number: 13,
     tier: "signals",
     category: "Contract data",
     title: "The Contract Expiry Clock",
-    hook: "Know when every rival's maintenance contract runs out — because they published it.",
+    hook: "Leeds City Council's £1.4m electrical testing contract ran to May 2026. That was published.",
     description:
-      "When a council, trust or housing association awards a fire or electrical maintenance contract, the award notice is published — including who won it, what it's worth and when it ends. Almost nobody goes back and reads the end dates. This builds a calendar of every public life-safety contract in your region and when it expires, so you can start building the relationship six months before anyone else knows a retender is coming.",
+      "So was West Yorkshire Fire and Rescue's own £650,000 security maintenance contract, and a Leeds housing association's fire safety contract with its full three-year term. When a public body awards work, the notice names the winner, the value and — often — the end date. Almost nobody goes back and reads those end dates. This builds a calendar of every public life-safety contract in your region so you're building the relationship six months before the retender, not reacting two weeks after.",
     money:
-      "Contracts are won in the six months before the tender opens, not in the two weeks after.",
+      "Contracts are won in the six months before the tender opens, not in the fortnight after it lands.",
     stats: [
-      { value: "Award", label: "value and incumbent" },
-      { value: "6 mo", label: "warning before retender" },
-      { value: "Public", label: "already published data" },
+      { value: "£1.4m", label: "real Leeds contract, dates published" },
+      { value: "~Half", label: "of notices carry a clean end date" },
+      { value: "2025", label: "law now requires the term" },
     ],
   },
   {
     number: 14,
     tier: "signals",
-    category: "Competitor data",
-    title: "Competitor Watch",
-    hook: "Which local firms are growing, which are in trouble, and whose customers are about to be in play.",
+    category: "Schools funding",
+    title: "The Funded Schools List",
+    hook: "The government publishes which schools have just been handed money for fire protection.",
     description:
-      "Every competitor in your patch files accounts at Companies House, appears or disappears from the BAFE, NICEIC and FIA registers, and shows up in The Gazette if they hit trouble. Joined together, that is a live picture of your market: who is expanding, who has lost their accreditation, who is winding up — and therefore whose contracts and whose engineers are suddenly available.",
+      "The Condition Improvement Fund gave out around £470 million across 789 school projects in its last round, and the Department for Education's own guidance ranks fire protection — alarms, fire doors — and electrical safety as its highest funding priority, above roofs and boilers. The outcome list is published as a spreadsheet naming every school and every sum awarded. Filter it to Yorkshire and you have schools with budget already ring-fenced for precisely your work, months before they go looking for a contractor.",
     money:
-      "When a competitor fails, their clients need a contractor within weeks. Knowing first is the whole advantage.",
+      "A funded project is not a maybe. The money exists, the deadline is real, and someone has to be asked to quote.",
     stats: [
-      { value: "4", label: "public registers joined" },
-      { value: "Accounts", label: "and accreditation changes" },
-      { value: "Alerts", label: "on insolvency notices" },
+      { value: "789", label: "projects in the last round" },
+      { value: "£470m", label: "awarded nationally" },
+      { value: "Top", label: "priority is fire and electrical" },
     ],
+    note: "Money already allocated",
   },
   {
     number: 15,
     tier: "signals",
-    category: "Joined-up data",
-    title: "The Territory Map",
-    hook: "Every building within reach that is legally required to have what you sell.",
+    category: "Care home data",
+    title: "Care Home Safety Radar",
+    hook: "Every care home the regulator has marked down on safety — published, free, updated monthly.",
     description:
-      "Non-domestic energy certificates give you the building, its floor area and its use class. Care home and school registers give you the operator. The higher-risk buildings register gives you the residential blocks. Put on one map, that is every school, care home, warehouse, hospital and high-rise in your patch — sized, classified, owner named, and colour-coded by whether they're already a customer.",
+      "The Care Quality Commission rates every care home in the country against five headings, and one of them is simply “Safe” — which covers fire safety, maintenance checks and equipment records. A home rated Requires Improvement or Inadequate on Safe is a home under regulatory pressure to fix the exact things you sell, with an inspector due back. The full directory with ratings is a free monthly download. Filter it to West Yorkshire and the list writes itself.",
     money:
-      "It turns 'who should we be talking to?' from a guess into a list you can work through.",
+      "A care home manager facing re-inspection is not shopping around on price. They need it fixed and evidenced.",
     stats: [
-      { value: "One map", label: "of your whole territory" },
-      { value: "Sized", label: "floor area and use class" },
-      { value: "Gaps", label: "shown against your client list" },
+      { value: "Monthly", label: "refreshed public download" },
+      { value: "“Safe”", label: "is its own published rating" },
+      { value: "Every", label: "registered home in the country" },
     ],
-    note: "Most visual",
+    note: "Self-qualifying leads",
   },
 ];
 
@@ -302,7 +303,7 @@ const tiers: { key: Tier; title: string; note: string; blurb: string }[] = [
     title: "Signals nobody else is watching",
     note: "Ideas 11 – 15",
     blurb:
-      "These five are different. They don't need a single thing from your systems — they're built by reading public data that is already out there, free, and that essentially nobody in the trade bothers to join together. This is where we've had the most success elsewhere.",
+      "These five need nothing from your systems at all. They're built by reading public data that is already out there and free, and that essentially nobody in the trade joins together. Before writing them down we went and checked every source against the live service — the numbers below are measured, not estimated, and where a source turned out to be weaker than we'd hoped we've said so rather than quietly rounded up.",
   },
 ];
 
@@ -416,7 +417,55 @@ export default function Opportunities() {
               </div>
             ))}
 
-            {/* The eleventh option */}
+            {/* What we checked, and what we found wrong */}
+            <div className="bg-card border-l-[3px] border-l-ink border-y border-r border-rule rounded-[2px] p-8 md:p-10">
+              <p className="eyebrow text-ink-muted mb-4">Where the last five came from</p>
+              <h3 className="font-display text-[22px] text-ink mb-5">
+                We checked every source before writing it down
+              </h3>
+              <div className="grid gap-8 lg:grid-cols-2">
+                <div className="space-y-4 text-ink-secondary leading-relaxed max-w-[60ch]">
+                  <p>
+                    Ideas built on public data are easy to write and easy to get
+                    wrong. So each source was tested against the live service, and
+                    two of our original five didn&apos;t survive it — a competitor
+                    tracker that would have meant scraping registers whose owners
+                    explicitly ask you not to, and a territory map that leaned on a
+                    government register deliberately built to prevent exactly that
+                    kind of bulk lookup. Both were replaced with sources we could
+                    actually stand behind.
+                  </p>
+                  <p className="text-ink font-medium">
+                    We&apos;d rather tell you that now than have you find out in
+                    front of a client.
+                  </p>
+                </div>
+
+                <div className="space-y-4">
+                  {[
+                    {
+                      t: "Planning applications",
+                      d: "Names and registered addresses are public; phone numbers and emails are redacted by law on every application. Four of the five councils share one system, Kirklees runs its own. For a product we'd license a planning data feed rather than scrape the portals.",
+                    },
+                    {
+                      t: "Contract end dates",
+                      d: "Published often, but not always — some award notices leave the date blank. We'd read the contract term from the notice text as a fallback. Procurement rules since 2025 now require the term, so this gets better over time.",
+                    },
+                    {
+                      t: "Approaching duty holders",
+                      d: "Where the responsible person on a notice is a company, ordinary business-to-business rules apply. Where it's a named individual, marketing rules are stricter and calls need screening first.",
+                    },
+                  ].map((c) => (
+                    <div key={c.t} className="border-t border-rule pt-4">
+                      <p className="eyebrow text-ink-muted mb-2">{c.t}</p>
+                      <p className="text-sm text-ink-secondary leading-relaxed">{c.d}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* The sixteenth option */}
             <div className="bg-paper-raised border border-rule-strong rounded-[2px] p-8 md:p-10 max-w-[820px]">
               <p className="eyebrow text-ink-muted mb-4">Or</p>
               <h3 className="font-display text-[22px] text-ink mb-4">
