@@ -193,19 +193,19 @@ const ideas: Idea[] = [
   {
     number: 11,
     tier: "signals",
-    category: "Planning data",
-    title: "Planning Application Radar",
-    hook: "The buildings that will need fire systems, spotted while they're still drawings.",
+    category: "Council spend",
+    title: "Read the Council's Books",
+    hook: "Chubb, ADT, Churches Fire, Salts Fire & Security. All named in your councils' own published accounts.",
     description:
-      "Every council publishes its planning applications publicly, the day they're validated. A 60-bed care home, a warehouse extension, offices converted to flats — each one is a fire alarm, an emergency lighting scheme, a sprinkler system and a distribution board, well before anyone writes a tender. This reads Leeds, Bradford, Wakefield, Kirklees and Calderdale daily and flags the ones that mean work for you, with the applicant and agent's name and registered address attached.",
+      "Every council must publish every payment it makes over £500 — supplier named, amount shown. We opened the actual files. One month of Bradford's alone names Salts Fire & Security, Cannon Electrical Services and RPS Electrical. Kirklees goes further and writes the reason in plain English: “Churches Fire — Sprinklers 25/26”, “Fire Regulation Comp Works”. Add up a year of it and you know which rival holds which council's work and roughly what they're paid for it.",
     money:
-      "You would be having the conversation while your competitors are still waiting for a tender to land in their inbox.",
+      "You would walk into a renewal conversation already knowing the incumbent and the number. Nobody else in your trade is reading these files.",
     stats: [
-      { value: "5", label: "council portals, 2 different systems" },
-      { value: "Name", label: "and address — not phone or email" },
-      { value: "Months", label: "ahead of the tender" },
+      { value: "5", label: "councils, all publishing monthly" },
+      { value: "£500", label: "every payment above it, by law" },
+      { value: "OGL", label: "free to reuse commercially" },
     ],
-    note: "Earliest lead — see the caveat",
+    note: "Verified — real names in real files",
   },
   {
     number: 12,
@@ -444,8 +444,8 @@ export default function Opportunities() {
                 <div className="space-y-4">
                   {[
                     {
-                      t: "Planning applications",
-                      d: "Names and registered addresses are public; phone numbers and emails are redacted by law on every application. Four of the five councils share one system, Kirklees runs its own. For a product we'd license a planning data feed rather than scrape the portals.",
+                      t: "Council spend files",
+                      d: "There is no clean “fire safety” category in most of them — Wakefield and Kirklees classify well, Leeds and Bradford don't. So this works by matching supplier names, which means keeping a list of competitors and their trading variants. Real work, but ordinary work.",
                     },
                     {
                       t: "Contract end dates",

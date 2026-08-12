@@ -105,9 +105,71 @@ be said out loud rather than left for the client to discover.
 
 ---
 
-## Idea 11 — Planning Application Radar — ⚠️ PARTIAL, wording corrected
+## Idea 11 — Read the Council's Books — ✅ CONFIRMED
 
-**Mechanism real. Two claims were wrong.**
+**Replaced the Planning Application Radar, which had a licensing problem (below).**
+
+The Local Government Transparency Code requires every English council to publish
+all expenditure over £500, supplier named. Still in force; Leeds voluntarily
+publishes *all* transactions, not just above £500.
+
+Real files were downloaded and read for four of five councils:
+
+| Council | Source | Currency | Useful classification? |
+|---|---|---|---|
+| Leeds | datamillnorth.org, monthly CSV | to Mar 2026 | Generic budget lines only |
+| Bradford | datahub.bradford.gov.uk, monthly CSV | to Jun 2026 | Category field **empty** in every row |
+| **Kirklees** | kirklees.gov.uk, monthly xlsx | Dec 2025 checked | **Best** — `Proclass Description` + free-text `Purpose of Spend` |
+| **Wakefield** | datamillnorth, quarterly CSV | Q1 2026-27 | **Good** — UNSPSC-style `Thomclas` |
+| Calderdale | dataworks.calderdale.gov.uk | — | Dataset confirmed, but site 403s automated fetches — **file contents unverified** |
+
+### Competitor names found in the actual files
+- **Leeds:** ADT Fire And Security Plc · Chubb Fire & Security Ltd · Churches Fire
+  Security Ltd · Edmundson Electrical Ltd
+- **Bradford (one month):** Salts Fire & Security Ltd · Cannon Electrical Services
+  · Fire Glass UK Ltd · RPS Electrical Services Ltd · Edmundson Electrical ·
+  West Yorkshire Fire and Rescue (£1.04m single payment)
+- **Kirklees:** Churches Fire Security · Aspect Fire Solutions · SPL Fire Safety ·
+  RFJ Electrical · Electrical Compliance & Safety Ltd. Free-text purposes include
+  "Churches Fire - Sprinklers 25/26", "Fire Regulation Comp Works", "Dalek, Fire
+  Safety system and CCTV"
+- **Wakefield:** Sandal Security Services Ltd · ITS Designs (Alert-It Care Alarms)
+  · A to B Training (Fire Training). Categories include "Burglar & Intruder Alarm
+  Systems", "Fire Training", "Electrical Goods - Sales"
+
+**Licence:** OGL v3 confirmed explicitly for Leeds, Bradford and Kirklees. OGL
+permits commercial reuse.
+
+### The catch
+No clean "fire safety" category in most files — Bradford's category column is
+blank throughout, Leeds's is generic budget lines. So this is **supplier-name
+driven, not category driven**: it needs a maintained list of competitor legal and
+trading names (they vary — "Chubb Fire & Security Ltd" vs "Chubb Fire and Security
+Limited"), a pipeline concatenating 12+ files per council per year, and fuzzy name
+matching. Buildable and honest, but that matching is the actual engineering.
+
+---
+
+## Council asset registers — ⚠️ PARTIAL, not used
+
+Checked as a possible territory-map replacement. Mixed quality:
+- **Calderdale** — current and excellent. `Building Assets - 2025-26.csv` with KPI
+  category, description, full address, postcode, tenure, occupied/vacant. Real rows
+  include schools, leisure centres, day centres, depots, a crematorium.
+- **Wakefield** — current and good. Site classification, committee (e.g. "Children
+  and Young People"), postcode, tenure, floor area.
+- **Bradford** — dataset listed, file fetch 403'd, unverified.
+- **Leeds** — only locatable file dates from **2016**. Stale.
+- **Kirklees** — register dated **2015**, most rows show "TBC" for tenure, type and
+  use, despite the metadata page claiming it was updated July 2026. Genuinely weak.
+
+Not pitched: too uneven across the five councils to promise as a single product.
+
+---
+
+## Planning Application Radar — ⚠️ REPLACED (kept on file)
+
+**The mechanism is real, but two claims were wrong and one is a licensing problem.**
 
 Portals (all public, no login):
 - Leeds `publicaccess.leeds.gov.uk/online-applications/` — Idox Public Access
@@ -125,10 +187,14 @@ Portals (all public, no login):
 2. **"Free public planning data" — misleading.** Free to *view*. Idox Public
    Access terms of use restrict commercial reuse of the content without a licence
    from Idox — and a paid monitoring product built by scraping and repackaging is
-   exactly what that clause targets. **Recommendation: license a planning data
-   feed rather than scrape the portals.** Corrected on the card and called out in
-   the caveats box.
-3. "12–18 months ahead" was unverified, so softened to "months ahead".
+   exactly what that clause targets. **This is why the card was replaced.** A
+   licensed planning data feed would make the idea viable; raw scraping would not.
+3. "12–18 months ahead" was unverified.
+
+**Decision: replaced by Read the Council's Books**, which is OGL, explicitly
+free for commercial reuse, and verified against real downloaded files. Planning
+remains a good idea if Faelsafe ever wants to pay for a proper feed — it is the
+earliest signal in the whole pipeline, it just isn't free.
 
 ### Other findings
 - No API, CSV or RSS on any of the five. HTML scraping only.
