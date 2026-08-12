@@ -10,6 +10,7 @@
  */
 
 import MobileNavMenu from "./MobileNavMenu";
+import { p } from "./../lib/paths";
 
 /** Faint rule grid behind light heroes. */
 export function GlowField() {
@@ -44,11 +45,11 @@ export type ActivePage =
 type NavLink = { href: string; label: string; page: ActivePage; highlight?: boolean };
 
 export const NAV_LINKS: NavLink[] = [
-  { href: "/", label: "Home", page: "home" },
-  { href: "/vibe-coding", label: "What vibe coding is", page: "vibe-coding" },
-  { href: "/opportunities", label: "10 ideas for Faelsafe", page: "opportunities" },
-  { href: "/website", label: "Your website", page: "website" },
-  { href: "/website/demo", label: "See the redesign", page: "demo", highlight: true },
+  { href: p("/"), label: "Home", page: "home" },
+  { href: p("/vibe-coding"), label: "What vibe coding is", page: "vibe-coding" },
+  { href: p("/opportunities"), label: "10 ideas for Faelsafe", page: "opportunities" },
+  { href: p("/website"), label: "Your website", page: "website" },
+  { href: p("/website/demo"), label: "See the redesign", page: "demo", highlight: true },
 ];
 
 export type Crumb = { label: string; href?: string };
@@ -58,10 +59,10 @@ function TopBar() {
   return (
     <div className="bg-card border-b border-rule">
       <div className="max-w-[1240px] mx-auto px-5 md:px-8 py-3 flex items-center justify-between gap-4">
-        <a href="/" className="flex-shrink-0" aria-label="Faelsafe — home">
+        <a href={p("/")} className="flex-shrink-0" aria-label="Faelsafe — home">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/faelsafe/logo.png"
+            src={p("/faelsafe/logo.png")}
             alt="Faelsafe Life Safety"
             className="h-10 md:h-12 w-auto"
           />
@@ -172,23 +173,23 @@ export function SiteFooter() {
     {
       heading: "The session",
       links: [
-        { href: "/", label: "Home" },
-        { href: "/vibe-coding", label: "What vibe coding is" },
-        { href: "/opportunities", label: "10 ideas for Faelsafe" },
+        { href: p("/"), label: "Home" },
+        { href: p("/vibe-coding"), label: "What vibe coding is" },
+        { href: p("/opportunities"), label: "10 ideas for Faelsafe" },
       ],
     },
     {
       heading: "Your website",
       links: [
-        { href: "/website", label: "The honest review" },
-        { href: "/website/demo", label: "The redesign" },
+        { href: p("/website"), label: "The honest review" },
+        { href: p("/website/demo"), label: "The redesign" },
       ],
     },
     {
       heading: "The promise",
       links: [
-        { href: "/opportunities", label: "Pick one — we build it" },
-        { href: "/vibe-coding#cost", label: "You own what we build" },
+        { href: p("/opportunities"), label: "Pick one — we build it" },
+        { href: p("/vibe-coding#cost"), label: "You own what we build" },
       ],
     },
   ];

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { NAV_LINKS, PHONE_DISPLAY, PHONE_HREF, type ActivePage } from "./ui";
+import { p } from "./../lib/paths";
 
 export default function MobileNavMenu({ activePage }: { activePage: ActivePage }) {
   const [open, setOpen] = useState(false);
@@ -111,7 +112,7 @@ export default function MobileNavMenu({ activePage }: { activePage: ActivePage }
 
             <footer className="px-5 py-4 border-t border-rule">
               <a
-                href="/website/demo"
+                href={p("/website/demo")}
                 onClick={() => setOpen(false)}
                 className="block text-center text-sm font-semibold bg-accent text-white py-3 rounded-[2px] hover:bg-accent-hover transition-colors"
               >

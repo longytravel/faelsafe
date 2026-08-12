@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { PHONE_DISPLAY, PHONE_HREF, EMAIL } from "@/src/components/ui";
 import QuoteForm from "@/src/components/QuoteForm";
+import { p } from "@/src/lib/paths";
 
 /**
  * The rebuilt Faelsafe homepage.
@@ -92,7 +93,7 @@ const localBusinessSchema = {
 const services = [
   {
     id: "fire-safety",
-    icon: "/faelsafe/svc-fire.png",
+    icon: p("/faelsafe/svc-fire.png"),
     title: "Fire Safety",
     standard: "BS 5839 · BAFE accredited",
     body: "Design, installation, commissioning and maintenance of fire detection and alarm systems, emergency lighting and extinguishers — with the certification to prove it.",
@@ -100,7 +101,7 @@ const services = [
   },
   {
     id: "sprinklers",
-    icon: "/faelsafe/svc-sprinkler.jpg",
+    icon: p("/faelsafe/svc-sprinkler.jpg"),
     title: "Sprinkler Maintenance",
     standard: "BS EN 12845:2015+A1:2019",
     body: "Scheduled servicing, weekly and quarterly testing regimes, tank and pump inspections, and remedial work on wet, dry and water mist systems.",
@@ -108,7 +109,7 @@ const services = [
   },
   {
     id: "electrical",
-    icon: "/faelsafe/svc-electrical.png",
+    icon: p("/faelsafe/svc-electrical.png"),
     title: "Electrical Services",
     standard: "BS 7671 18th Edition · NICEIC",
     body: "Commercial and industrial installation, fixed wire testing, EICRs, PAT testing and remedial work — from a single distribution board to a full site rewire.",
@@ -116,7 +117,7 @@ const services = [
   },
   {
     id: "security",
-    icon: "/faelsafe/svc-security.png",
+    icon: p("/faelsafe/svc-security.png"),
     title: "Electronic Security",
     standard: "Monitored & maintained",
     body: "CCTV and visual surveillance, intruder and hold-up alarms, access control and door entry — designed, installed and maintained by the same engineers.",
@@ -176,7 +177,7 @@ export default function RedesignDemo() {
         <span className="text-white/70">
           A demonstration rebuild of the Faelsafe homepage.
         </span>{" "}
-        <a href="/website" className="text-accent hover:underline underline-offset-2 font-semibold">
+        <a href={p("/website")} className="text-accent hover:underline underline-offset-2 font-semibold">
           ← Back to the review
         </a>
       </div>
@@ -186,7 +187,7 @@ export default function RedesignDemo() {
         <div className="max-w-[1240px] mx-auto px-5 md:px-8 py-3 flex items-center justify-between gap-4">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/faelsafe/logo.png"
+            src={p("/faelsafe/logo.png")}
             alt="Faelsafe Life Safety Ltd"
             className="h-11 md:h-14 w-auto"
           />
@@ -270,13 +271,13 @@ export default function RedesignDemo() {
                   <div className="flex flex-wrap items-center gap-6">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                      src="/faelsafe/niceic.png"
+                      src={p("/faelsafe/niceic.png")}
                       alt="NICEIC Approved Contractor"
                       className="h-14 w-auto bg-white p-1.5 rounded-[2px]"
                     />
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                      src="/faelsafe/trustmark.png"
+                      src={p("/faelsafe/trustmark.png")}
                       alt="TrustMark Government Endorsed Quality"
                       className="h-14 w-auto bg-white p-1.5 rounded-[2px]"
                     />
@@ -447,7 +448,7 @@ export default function RedesignDemo() {
             <div>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/faelsafe/logo.png"
+                src={p("/faelsafe/logo.png")}
                 alt="Faelsafe Life Safety Ltd"
                 className="h-12 w-auto mb-5"
               />
@@ -494,7 +495,7 @@ export default function RedesignDemo() {
             <p className="text-xs text-ink-muted">
               Demonstration rebuild — not the live faelsafe.co.uk.
             </p>
-            <a href="/website" className="text-xs fs-link font-semibold">
+            <a href={p("/website")} className="text-xs fs-link font-semibold">
               ← Back to the website review
             </a>
           </div>

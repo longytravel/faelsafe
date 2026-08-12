@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SiteNav, SiteFooter, DarkField } from "@/src/components/ui";
+import { p } from "@/src/lib/paths";
 
 export const metadata: Metadata = {
   title: "An honest review of faelsafe.co.uk | Faelsafe × Vibe Coding",
@@ -216,7 +217,7 @@ export default function WebsiteReview() {
     <>
       <SiteNav
         activePage="website"
-        breadcrumb={[{ label: "Home", href: "/" }, { label: "Your website" }]}
+        breadcrumb={[{ label: "Home", href: p("/") }, { label: "Your website" }]}
       />
 
       <main>
@@ -253,7 +254,7 @@ export default function WebsiteReview() {
 
             <div className="mt-12">
               <a
-                href="/website/demo"
+                href={p("/website/demo")}
                 className="eyebrow inline-block bg-accent hover:bg-accent-hover text-white px-6 py-3.5 rounded-[2px] transition-colors"
               >
                 ★ Skip to the rebuilt homepage
@@ -415,7 +416,7 @@ export default function WebsiteReview() {
               judge it rather than take our word for it. It took an afternoon.
             </p>
             <a
-              href="/website/demo"
+              href={p("/website/demo")}
               className="eyebrow inline-block bg-accent hover:bg-accent-hover text-white px-6 py-3.5 rounded-[2px] transition-colors"
             >
               ★ Open the rebuilt homepage

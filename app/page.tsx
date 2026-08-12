@@ -1,9 +1,10 @@
 import { SiteNav, SiteFooter, DarkField, GlowField } from "@/src/components/ui";
+import { p } from "@/src/lib/paths";
 
 const routes = [
   {
     number: "01",
-    href: "/vibe-coding",
+    href: p("/vibe-coding"),
     eyebrow: "Start here",
     title: "What vibe coding is",
     hook: "In plain English, with no jargon and no acronyms.",
@@ -12,7 +13,7 @@ const routes = [
   },
   {
     number: "02",
-    href: "/opportunities",
+    href: p("/opportunities"),
     eyebrow: "The main event",
     title: "Ten things we could build for Faelsafe",
     hook: "Every one of them tied to money in or hours back.",
@@ -21,7 +22,7 @@ const routes = [
   },
   {
     number: "03",
-    href: "/website",
+    href: p("/website"),
     eyebrow: "The uncomfortable one",
     title: "An honest review of your website",
     hook: "Fifteen findings, all of them checked, none of them opinion.",
@@ -64,13 +65,13 @@ export default function Home() {
 
             <div className="flex flex-wrap gap-3 mt-10 animate-fade-in delay-3">
               <a
-                href="/opportunities"
+                href={p("/opportunities")}
                 className="eyebrow bg-accent hover:bg-accent-hover text-white px-6 py-3.5 rounded-[2px] transition-colors"
               >
                 See the ten ideas
               </a>
               <a
-                href="/vibe-coding"
+                href={p("/vibe-coding")}
                 className="eyebrow text-white border border-white/40 hover:border-accent hover:text-accent px-6 py-3.5 rounded-[2px] transition-colors"
               >
                 What is vibe coding?
@@ -174,7 +175,7 @@ export default function Home() {
               this way.
             </p>
             <a
-              href="/opportunities"
+              href={p("/opportunities")}
               className="eyebrow inline-block bg-accent hover:bg-accent-hover text-white px-6 py-3.5 rounded-[2px] transition-colors"
             >
               Go to the ten ideas

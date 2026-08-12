@@ -1,11 +1,23 @@
 import type { Metadata, Viewport } from "next";
 import { Roboto } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700", "900"],
   variable: "--font-roboto",
+});
+
+/**
+ * Faelsafe's own display face. Loaded through next/font/local rather than a raw
+ * @font-face rule so the URL is rewritten correctly under a basePath (GitHub
+ * Pages) as well as at the domain root (Vercel).
+ */
+const neuropolitical = localFont({
+  src: "../public/faelsafe/neuropolitical.ttf",
+  variable: "--font-neuropolitical",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -30,7 +42,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en-GB" className={roboto.variable}>
+    <html
+      lang="en-GB"
+      className={`${roboto.variable} ${neuropolitical.variable}`}
+    >
       <body className="antialiased bg-paper text-ink-secondary overflow-x-clip">
         {children}
       </body>

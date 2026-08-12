@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SiteNav, SiteFooter, DarkField } from "@/src/components/ui";
+import { p } from "@/src/lib/paths";
 
 export const metadata: Metadata = {
   title: "What vibe coding is | Faelsafe × Vibe Coding",
@@ -78,7 +79,7 @@ export default function VibeCoding() {
     <>
       <SiteNav
         activePage="vibe-coding"
-        breadcrumb={[{ label: "Home", href: "/" }, { label: "What vibe coding is" }]}
+        breadcrumb={[{ label: "Home", href: p("/") }, { label: "What vibe coding is" }]}
       />
 
       <main>
@@ -340,7 +341,7 @@ export default function VibeCoding() {
               has to do one job takes.
             </p>
             <a
-              href="/opportunities"
+              href={p("/opportunities")}
               className="eyebrow inline-block bg-accent hover:bg-accent-hover text-white px-6 py-3.5 rounded-[2px] transition-colors"
             >
               Ten things we could build for you

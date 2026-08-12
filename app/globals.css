@@ -3,14 +3,10 @@
 /* ── Faelsafe brand fonts ──
    `neuropolitical` is Faelsafe's own display face, self-hosted on their site at
    /wp-content/uploads/2022/03/neuropolitical-rg.ttf. It is reproduced here for a
-   demonstration built for Faelsafe, from their own assets. Michroma is stacked
+   demonstration built for Faelsafe, from their own assets. It is loaded in
+   app/layout.tsx via next/font/local — which exposes --font-neuropolitical and,
+   crucially, rewrites the URL correctly under a basePath. Michroma is stacked
    behind it as a near-identical fallback so nothing breaks if the file is pulled. */
-@font-face {
-  font-family: "Neuropolitical";
-  src: url("/faelsafe/neuropolitical.ttf") format("truetype");
-  font-weight: 400 700;
-  font-display: swap;
-}
 
 @theme {
   /* ── Faelsafe design system ──
@@ -49,7 +45,7 @@
 
   /* Type — Roboto body (as their site), neuropolitical display (their logo face). */
   --font-sans: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-display: "Neuropolitical", Michroma, "Roboto Condensed", Roboto, sans-serif;
+  --font-display: var(--font-neuropolitical), Michroma, "Roboto Condensed", Roboto, sans-serif;
 }
 
 html {

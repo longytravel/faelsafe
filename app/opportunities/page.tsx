@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SiteNav, SiteFooter, DarkField } from "@/src/components/ui";
+import { p } from "@/src/lib/paths";
 
 export const metadata: Metadata = {
   title: "Ten things we could build for Faelsafe | Faelsafe × Vibe Coding",
@@ -263,7 +264,7 @@ export default function Opportunities() {
     <>
       <SiteNav
         activePage="opportunities"
-        breadcrumb={[{ label: "Home", href: "/" }, { label: "10 ideas for Faelsafe" }]}
+        breadcrumb={[{ label: "Home", href: p("/") }, { label: "10 ideas for Faelsafe" }]}
       />
 
       <main>
@@ -346,13 +347,13 @@ export default function Opportunities() {
             </p>
             <div className="flex flex-wrap gap-3">
               <a
-                href="/website"
+                href={p("/website")}
                 className="eyebrow bg-accent hover:bg-accent-hover text-white px-6 py-3.5 rounded-[2px] transition-colors"
               >
                 Read the website review
               </a>
               <a
-                href="/vibe-coding"
+                href={p("/vibe-coding")}
                 className="eyebrow text-white border border-white/40 hover:border-accent hover:text-accent px-6 py-3.5 rounded-[2px] transition-colors"
               >
                 How this all works
