@@ -12,7 +12,7 @@ throughout, and deliberately free of technical vocabulary.
 |---|---|
 | `/` | Hero, why we're here, three routes into the tabs |
 | `/vibe-coding` | **Tab 1** — what vibe coding is, in plain English. Zero jargon by design |
-| `/opportunities` | **Tab 2** — ten things we could build, grouped into win-more-work / get-paid-twice / stop-losing-hours |
+| `/opportunities` | **Tab 2** — fifteen things we could build, grouped into win-more-work / get-paid-twice / stop-losing-hours / public-data signals |
 | `/website` | **Tab 3** — fifteen evidenced findings on faelsafe.co.uk |
 | `/website/demo` | **The redesign** — a working rebuilt Faelsafe homepage. No pitch-site chrome; it carries its own header and footer |
 
@@ -120,6 +120,6 @@ curl -s http://localhost:3111/website/demo | grep -o 'property="og:[a-z]*"'   # 
 
 - [ ] Read `/vibe-coding` and `/opportunities` aloud as the MD. Anything requiring
       technical knowledge to understand gets rewritten.
-- [ ] Sanity-check the ten ideas against what Faelsafe actually runs today — some may
+- [ ] Sanity-check the fifteen ideas against what Faelsafe actually runs today — some may
       already be covered by their existing job management software.
 - [ ] Decide whether to leave the accreditation badges in `/website/demo`.

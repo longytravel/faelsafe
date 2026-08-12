@@ -344,7 +344,7 @@ export default function VibeCoding() {
               href={p("/opportunities")}
               className="eyebrow inline-block bg-accent hover:bg-accent-hover text-white px-6 py-3.5 rounded-[2px] transition-colors"
             >
-              Ten things we could build for you
+              Fifteen things we could build for you
             </a>
           </div>
         </section>

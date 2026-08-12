@@ -47,7 +47,7 @@ type NavLink = { href: string; label: string; page: ActivePage; highlight?: bool
 export const NAV_LINKS: NavLink[] = [
   { href: p("/"), label: "Home", page: "home" },
   { href: p("/vibe-coding"), label: "What vibe coding is", page: "vibe-coding" },
-  { href: p("/opportunities"), label: "10 ideas for Faelsafe", page: "opportunities" },
+  { href: p("/opportunities"), label: "15 ideas for Faelsafe", page: "opportunities" },
   { href: p("/website"), label: "Your website", page: "website" },
   { href: p("/website/demo"), label: "See the redesign", page: "demo", highlight: true },
 ];
@@ -175,7 +175,7 @@ export function SiteFooter() {
       links: [
         { href: p("/"), label: "Home" },
         { href: p("/vibe-coding"), label: "What vibe coding is" },
-        { href: p("/opportunities"), label: "10 ideas for Faelsafe" },
+        { href: p("/opportunities"), label: "15 ideas for Faelsafe" },
       ],
     },
     {

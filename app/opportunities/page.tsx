@@ -3,12 +3,12 @@ import { SiteNav, SiteFooter, DarkField } from "@/src/components/ui";
 import { p } from "@/src/lib/paths";
 
 export const metadata: Metadata = {
-  title: "Ten things we could build for Faelsafe | Faelsafe × Vibe Coding",
+  title: "Fifteen things we could build for Faelsafe | Faelsafe × Vibe Coding",
   description:
-    "Ten commercial opportunities for Faelsafe Life Safety Ltd — winning more contracts, turning completed work into recurring revenue, and cutting the paperwork that costs engineers. Each one costed and ready to build.",
+    "Fifteen commercial opportunities for Faelsafe Life Safety Ltd — winning more contracts, turning completed work into recurring revenue, cutting engineer paperwork, and reading public data nobody else in the trade joins together.",
 };
 
-type Tier = "win" | "revenue" | "hours";
+type Tier = "win" | "revenue" | "hours" | "signals";
 
 type Idea = {
   number: number;
@@ -189,6 +189,90 @@ const ideas: Idea[] = [
     ],
     note: "See the review",
   },
+
+  {
+    number: 11,
+    tier: "signals",
+    category: "Planning data",
+    title: "Planning Application Radar",
+    hook: "Every building in Yorkshire that will need fire systems, twelve months before it goes to tender.",
+    description:
+      "Every council publishes its planning applications, in public, the day they're submitted. A new care home, a warehouse extension, an office converted to flats, a school block — each one is a fire alarm, an emergency lighting scheme, a sprinkler system and a distribution board, eighteen months out. This reads Leeds, Bradford, Wakefield, Kirklees and Calderdale every morning and flags the applications that mean work for you, with the applicant and the agent's contact details attached.",
+    money:
+      "You would be talking to the developer while your competitors are still waiting for the tender to land in their inbox.",
+    stats: [
+      { value: "5+", label: "council portals read daily" },
+      { value: "12–18 mo", label: "ahead of the tender" },
+      { value: "Free", label: "public planning data" },
+    ],
+    note: "Earliest possible lead",
+  },
+  {
+    number: 12,
+    tier: "signals",
+    category: "Enforcement data",
+    title: "Enforcement Notice Radar",
+    hook: "Buildings that have been legally ordered to fix their fire safety. Today.",
+    description:
+      "When a fire authority serves an enforcement or prohibition notice, or the HSE prosecutes over electrical safety, that becomes a matter of public record. Behind every one is a building owner with a legal deadline, a compliance problem they cannot ignore, and usually no contractor lined up. This watches those public registers for your patch and tells you who they are while the notice is still fresh.",
+    money:
+      "There is no warmer lead in this trade than an organisation legally required to fix exactly what you do.",
+    stats: [
+      { value: "Legally", label: "obliged to act" },
+      { value: "Named", label: "premises and duty holder" },
+      { value: "Weekly", label: "sweep of public registers" },
+    ],
+    note: "Sharpest lead there is",
+  },
+  {
+    number: 13,
+    tier: "signals",
+    category: "Contract data",
+    title: "The Contract Expiry Clock",
+    hook: "Know when every rival's maintenance contract runs out — because they published it.",
+    description:
+      "When a council, trust or housing association awards a fire or electrical maintenance contract, the award notice is published — including who won it, what it's worth and when it ends. Almost nobody goes back and reads the end dates. This builds a calendar of every public life-safety contract in your region and when it expires, so you can start building the relationship six months before anyone else knows a retender is coming.",
+    money:
+      "Contracts are won in the six months before the tender opens, not in the two weeks after.",
+    stats: [
+      { value: "Award", label: "value and incumbent" },
+      { value: "6 mo", label: "warning before retender" },
+      { value: "Public", label: "already published data" },
+    ],
+  },
+  {
+    number: 14,
+    tier: "signals",
+    category: "Competitor data",
+    title: "Competitor Watch",
+    hook: "Which local firms are growing, which are in trouble, and whose customers are about to be in play.",
+    description:
+      "Every competitor in your patch files accounts at Companies House, appears or disappears from the BAFE, NICEIC and FIA registers, and shows up in The Gazette if they hit trouble. Joined together, that is a live picture of your market: who is expanding, who has lost their accreditation, who is winding up — and therefore whose contracts and whose engineers are suddenly available.",
+    money:
+      "When a competitor fails, their clients need a contractor within weeks. Knowing first is the whole advantage.",
+    stats: [
+      { value: "4", label: "public registers joined" },
+      { value: "Accounts", label: "and accreditation changes" },
+      { value: "Alerts", label: "on insolvency notices" },
+    ],
+  },
+  {
+    number: 15,
+    tier: "signals",
+    category: "Joined-up data",
+    title: "The Territory Map",
+    hook: "Every building within reach that is legally required to have what you sell.",
+    description:
+      "Non-domestic energy certificates give you the building, its floor area and its use class. Care home and school registers give you the operator. The higher-risk buildings register gives you the residential blocks. Put on one map, that is every school, care home, warehouse, hospital and high-rise in your patch — sized, classified, owner named, and colour-coded by whether they're already a customer.",
+    money:
+      "It turns 'who should we be talking to?' from a guess into a list you can work through.",
+    stats: [
+      { value: "One map", label: "of your whole territory" },
+      { value: "Sized", label: "floor area and use class" },
+      { value: "Gaps", label: "shown against your client list" },
+    ],
+    note: "Most visual",
+  },
 ];
 
 const tiers: { key: Tier; title: string; note: string; blurb: string }[] = [
@@ -212,6 +296,13 @@ const tiers: { key: Tier; title: string; note: string; blurb: string }[] = [
     note: "Ideas 07 – 10",
     blurb:
       "Time is the only thing you can't buy more of, and admin is eating it.",
+  },
+  {
+    key: "signals",
+    title: "Signals nobody else is watching",
+    note: "Ideas 11 – 15",
+    blurb:
+      "These five are different. They don't need a single thing from your systems — they're built by reading public data that is already out there, free, and that essentially nobody in the trade bothers to join together. This is where we've had the most success elsewhere.",
   },
 ];
 
@@ -267,7 +358,7 @@ export default function Opportunities() {
     <>
       <SiteNav
         activePage="opportunities"
-        breadcrumb={[{ label: "Home", href: p("/") }, { label: "10 ideas for Faelsafe" }]}
+        breadcrumb={[{ label: "Home", href: p("/") }, { label: "15 ideas for Faelsafe" }]}
       />
 
       <main>
@@ -277,7 +368,7 @@ export default function Opportunities() {
           <div className="relative max-w-[1240px] mx-auto px-5 md:px-8 py-20 md:py-24">
             <p className="eyebrow text-accent mb-8">The main event</p>
             <h1 className="font-display text-[clamp(30px,4.2vw,54px)] text-white leading-[1.06] mb-8 max-w-[18ch]">
-              Ten things we could build for Faelsafe
+              Fifteen things we could build for Faelsafe
             </h1>
             <p className="text-lg md:text-xl text-white/85 max-w-[64ch] leading-relaxed mb-6">
               Every one of these is built the same way: an afternoon or two, a
@@ -285,10 +376,17 @@ export default function Opportunities() {
               whether it&apos;s worth keeping. None of them is a system to migrate
               onto. None of them replaces anything you already run.
             </p>
-            <p className="text-lg text-white/85 max-w-[64ch] leading-relaxed">
+            <p className="text-lg text-white/85 max-w-[64ch] leading-relaxed mb-6">
               They are ordered by what they do to the bank balance: winning more
               work, getting paid for work you&apos;ve already done, and stopping the
               leak of hours.
+            </p>
+            <p className="text-lg text-white/85 max-w-[64ch] leading-relaxed">
+              The last five are the ones we&apos;d push hardest. They need nothing
+              from your systems at all — they&apos;re built by reading public data
+              that is already out there and free, and joining it together in a way
+              nobody in your trade does. That is where we&apos;ve seen the biggest
+              wins.
             </p>
           </div>
         </section>

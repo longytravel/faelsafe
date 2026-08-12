@@ -15,10 +15,10 @@ const routes = [
     number: "02",
     href: p("/opportunities"),
     eyebrow: "The main event",
-    title: "Ten things we could build for Faelsafe",
+    title: "Fifteen things we could build for Faelsafe",
     hook: "Every one of them tied to money in or hours back.",
-    body: "Winning more contracts, getting paid twice for work already done, and killing the paperwork that costs you engineers. Read them, argue with them, and pick one.",
-    cta: "See the ten",
+    body: "Winning more contracts, getting paid twice for work already done, killing the paperwork that costs you engineers — and five built purely from public data nobody in your trade bothers to read. Argue with them, then pick one.",
+    cta: "See all fifteen",
   },
   {
     number: "03",
@@ -34,7 +34,7 @@ const routes = [
 const facts = [
   { value: "3", label: "days from brief to this site" },
   { value: "£0", label: "licence fees — you own it" },
-  { value: "10", label: "ideas costed and ready" },
+  { value: "15", label: "ideas costed and ready" },
 ];
 
 export default function Home() {
@@ -68,7 +68,7 @@ export default function Home() {
                 href={p("/opportunities")}
                 className="eyebrow bg-accent hover:bg-accent-hover text-white px-6 py-3.5 rounded-[2px] transition-colors"
               >
-                See the ten ideas
+                See the fifteen ideas
               </a>
               <a
                 href={p("/vibe-coding")}
@@ -166,7 +166,7 @@ export default function Home() {
             </h2>
             <p className="text-lg text-white/85 leading-relaxed mb-4">
               Not a pilot, not a discovery phase, not a statement of work. Pick
-              whichever of the ten looks most like money, and we build a working
+              whichever of the fifteen looks most like money, and we build a working
               version of it you can put in front of an engineer or a client.
             </p>
             <p className="text-lg text-white/85 leading-relaxed mb-10">
@@ -178,7 +178,7 @@ export default function Home() {
               href={p("/opportunities")}
               className="eyebrow inline-block bg-accent hover:bg-accent-hover text-white px-6 py-3.5 rounded-[2px] transition-colors"
             >
-              Go to the ten ideas
+              Go to the fifteen ideas
             </a>
           </div>
         </section>

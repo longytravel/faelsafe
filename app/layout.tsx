@@ -23,11 +23,11 @@ const neuropolitical = localFont({
 export const metadata: Metadata = {
   title: "Faelsafe × Vibe Coding | Software built in hours, not months",
   description:
-    "A working demonstration for Faelsafe Life Safety Ltd: what vibe coding is in plain English, ten things we could build to win Faelsafe more work, and an honest review of faelsafe.co.uk with a redesigned homepage you can click through.",
+    "A working demonstration for Faelsafe Life Safety Ltd: what vibe coding is in plain English, fifteen things we could build to win Faelsafe more work, and an honest review of faelsafe.co.uk with a redesigned homepage you can click through.",
   openGraph: {
     title: "Faelsafe × Vibe Coding",
     description:
-      "Ten commercial ideas, a plain-English explainer, and a rebuilt faelsafe.co.uk homepage.",
+      "Fifteen commercial ideas, a plain-English explainer, and a rebuilt faelsafe.co.uk homepage.",
     type: "website",
     locale: "en_GB",
   },
