@@ -137,3 +137,31 @@ body {
 .delay-2 { animation-delay: 0.14s; opacity: 0; }
 .delay-3 { animation-delay: 0.21s; opacity: 0; }
 .delay-4 { animation-delay: 0.28s; opacity: 0; }
+
+/* The staggered classes start at opacity 0 and depend on the animation to
+   reveal them. Anything that stops the animation running — reduced-motion
+   preferences, an aggressive extension, a print — would leave the hero buttons
+   and stats permanently invisible. Fail visible, not hidden. */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in,
+  .delay-1,
+  .delay-2,
+  .delay-3,
+  .delay-4 {
+    animation: none;
+    animation-delay: 0s;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media print {
+  .animate-fade-in,
+  .delay-1,
+  .delay-2,
+  .delay-3,
+  .delay-4 {
+    animation: none;
+    opacity: 1;
+  }
+}

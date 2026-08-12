@@ -144,8 +144,9 @@ estimated. The re-run script is in the verification log.
 - [ ] Sanity-check ideas 1–10 against what Faelsafe actually runs today — some may
       already be covered by their existing job management software. (Ideas 11–15 are
       externally verified; 1–10 depend on their internal setup and are not.)
-- [ ] Open the site on a phone. Layouts are verified from 500px up but never on a
-      real handset.
+- [ ] Open it on a real handset once. Layouts are verified by rendering at 320,
+      360, 390, 430, 500, 768, 1024, 1280 and 1440px — but in iframes, which give a
+      true CSS viewport without real touch targets or a mobile browser's chrome.
 - [ ] Decide whether to leave the accreditation badges in `/website/demo`.
 - [ ] Note the site is `noindex` — the link works for anyone you send it to but
       won't appear in a search for "Faelsafe". Remove `robots` in `app/layout.tsx`

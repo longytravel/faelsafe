@@ -189,7 +189,7 @@ export default function RedesignDemo() {
           <img
             src={p("/faelsafe/logo.png")}
             alt="Faelsafe Life Safety Ltd"
-            className="h-11 md:h-14 w-auto"
+            className="h-9 sm:h-11 md:h-14 w-auto flex-shrink-0"
           />
 
           <div className="flex items-center gap-6">
@@ -216,9 +216,11 @@ export default function RedesignDemo() {
               <span className="eyebrow text-ink-muted hidden sm:block">
                 24 hour emergency
               </span>
+              {/* neuropolitical is a very wide face — at 360px the number clips.
+                  Body font below sm, display face from sm up. */}
               <a
                 href={PHONE_HREF}
-                className="font-display text-lg md:text-2xl text-accent-ink tnum tracking-tight"
+                className="text-sm font-bold sm:font-normal sm:font-display sm:text-lg md:text-2xl text-accent-ink tnum tracking-tight whitespace-nowrap"
               >
                 {PHONE_DISPLAY}
               </a>
