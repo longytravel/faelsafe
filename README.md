@@ -24,14 +24,35 @@ npm run dev          # http://localhost:3000
 npm run build        # type-checks and builds
 ```
 
+## Live
+
+**https://longytravel.github.io/faelsafe/**
+
+Deployed by `.github/workflows/pages.yml` on every push to `main`. No credentials
+needed beyond the repo's own.
+
 ## Deploy
 
-The GitHub repo is **github.com/longytravel/faelsafe**. Connect it to Vercel and keep
-the project name `faelsafe` so the URL is `faelsafe.vercel.app` with nothing appended.
+Two targets build from this one source tree:
 
-```bash
-npx vercel --prod
-```
+| Target | Env | Serves from |
+|---|---|---|
+| Vercel / `npm run dev` | nothing set | domain root |
+| GitHub Pages | `STATIC_EXPORT=1`, `NEXT_PUBLIC_BASE_PATH=/faelsafe` | `/faelsafe/` subpath |
+
+Hand-written links and image `src`s go through `src/lib/paths.ts` — Next rewrites its
+own `/_next/` assets for a basePath, but not plain `<a href>` or `<img src>`. The
+display font is loaded via `next/font/local` for the same reason: a literal `url()` in
+CSS is not base-path aware.
+
+**To add Vercel** (optional — Pages already serves it): open vercel.com/new, import
+the `faelsafe` repo, Deploy. Keep the project name `faelsafe` so the URL is
+`faelsafe.vercel.app`. Nothing to configure — no env vars, and the Vercel build path
+is the default one with no base path.
+
+The Vercel CLI cannot be driven from a Claude Code session: it forces
+`--non-interactive` when it detects an agent, so `vercel login` silently no-ops and
+there is no way to authenticate without pasting a token.
 
 No environment variables, no API keys, no database. Every page is statically
 prerendered — the whole site is ~104KB of JavaScript.
