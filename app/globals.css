@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+/* ── Faelsafe brand fonts ──
+   `neuropolitical` is Faelsafe's own display face, self-hosted on their site at
+   /wp-content/uploads/2022/03/neuropolitical-rg.ttf. It is reproduced here for a
+   demonstration built for Faelsafe, from their own assets. Michroma is stacked
+   behind it as a near-identical fallback so nothing breaks if the file is pulled. */
+@font-face {
+  font-family: "Neuropolitical";
+  src: url("/faelsafe/neuropolitical.ttf") format("truetype");
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+@theme {
+  /* ── Faelsafe design system ──
+     Colours and type lifted from faelsafe.co.uk. The look is high-contrast trade:
+     charcoal fields, a single hot orange, white cards, flat 0–2px corners and
+     1px rules. One accent colour only — the orange has to stay loud. */
+
+  /* Neutrals / fields */
+  --color-paper: #ffffff;          /* page background */
+  --color-paper-raised: #f4f4f4;   /* grey panel sections */
+  --color-card: #ffffff;           /* white cards and controls */
+  --color-rule: #dcdcdc;           /* 1px hairlines */
+  --color-rule-strong: #b4b4b4;    /* emphasis / active borders */
+
+  /* Ink */
+  --color-ink: #32373c;            /* headings + primary text (their charcoal) */
+  --color-ink-secondary: #4a4f54;  /* body copy */
+  --color-ink-muted: #7c8288;      /* eyebrows, metadata, labels */
+
+  /* Orange primary + charcoal secondary */
+  --color-accent: #f16b21;         /* Faelsafe orange — nav, buttons, numerals */
+  --color-accent-hover: #d4551a;   /* hover / pressed */
+  --color-highlight: #32373c;      /* charcoal — secondary editorial accent */
+  --color-highlight-tint: #f0f1f2; /* charcoal tint background */
+
+  /* Status */
+  --color-success: #2b7a4b;        /* verified / compliant */
+  --color-warning: #8a5e00;        /* caution */
+  --color-danger: #e30613;         /* Faelsafe red — critical / broken */
+
+  /* Faelsafe brand palette (available as bg-brand-* / text-brand-*) */
+  --color-brand-orange: #f16b21;
+  --color-brand-charcoal: #32373c;
+  --color-brand-red: #e30613;
+  --color-brand-black: #000000;
+
+  /* Type — Roboto body (as their site), neuropolitical display (their logo face). */
+  --font-sans: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: "Neuropolitical", Michroma, "Roboto Condensed", Roboto, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink-secondary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Display headings: the wide squared-off Faelsafe face. It has no lowercase
+   personality to speak of at small sizes, so it is used big and tracked tight.
+   Unlayered so this wins over utility weight classes. */
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+  font-weight: 400;
+}
+
+/* Uppercase letter-spaced eyebrow / label. */
+.eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Tabular lining figures for stats, option numbers, dates. */
+.tnum {
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+/* Orange underline-on-hover link affordance (opt-in). */
+.fs-link {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+.fs-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Faint rule grid behind heroes. */
+.paper-grid {
+  background-image:
+    repeating-linear-gradient(to right, rgba(50, 55, 60, 0.03) 0 1px, transparent 1px 48px),
+    repeating-linear-gradient(to bottom, rgba(50, 55, 60, 0.03) 0 1px, transparent 1px 48px);
+  -webkit-mask-image: radial-gradient(ellipse at 50% 0%, black, transparent 80%);
+  mask-image: radial-gradient(ellipse at 50% 0%, black, transparent 80%);
+}
+
+/* Same grid, inverted, for charcoal sections. */
+.dark-grid {
+  background-image:
+    repeating-linear-gradient(to right, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px 48px),
+    repeating-linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px 48px);
+  -webkit-mask-image: radial-gradient(ellipse at 50% 0%, black, transparent 80%);
+  mask-image: radial-gradient(ellipse at 50% 0%, black, transparent 80%);
+}
+
+/* The angled orange keyline their site uses under section headings. */
+.orange-rule::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 3px;
+  background: var(--color-accent);
+  margin-top: 20px;
+}
+
+/* Restrained entrance animation. */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.delay-1 { animation-delay: 0.07s; opacity: 0; }
+.delay-2 { animation-delay: 0.14s; opacity: 0; }
+.delay-3 { animation-delay: 0.21s; opacity: 0; }
+.delay-4 { animation-delay: 0.28s; opacity: 0; }
