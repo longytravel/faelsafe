@@ -1,6 +1,6 @@
 # Faelsafe × Vibe Coding — pitch site
 
-A four-page pitch site for **Faelsafe Life Safety Ltd** (faelsafe.co.uk), built in
+A five-page pitch site for **Faelsafe Life Safety Ltd** (faelsafe.co.uk), built in
 Faelsafe's own brand. Modelled on the `longytravel/FCA` pitch site.
 
 Audience: **Andrew Hutchison, Company Director** — so the language is commercial
@@ -116,10 +116,37 @@ curl -s http://localhost:3111/website/demo | grep -c 'application/ld+json'    # 
 curl -s http://localhost:3111/website/demo | grep -o 'property="og:[a-z]*"'   # several
 ```
 
+## The data behind ideas 11–15
+
+The last five ideas claim Faelsafe can build tools from public data. Those claims
+get shown to a client, so **every source was checked against the live service**
+before it went on the page. The full working — sources, URLs, licences, measured
+numbers and the honest catch on each — is in **`plans/data-verification.md`**.
+
+Three of the original five ideas did not survive that check and were replaced:
+
+| Dropped | Why |
+|---|---|
+| Competitor Watch | BAFE's register subdomain is `Disallow: /`; NICEIC's robots.txt names and blocks ClaudeBot and others, and the site 403s automated clients. "Lost accreditation" is also undetectable — no register exposes a removal event. |
+| The Territory Map | The higher-risk buildings register is, in gov.uk's own words, "designed to prevent users gathering data on multiple buildings in a single search and to prevent data scraping". It verifies an address you hold; it cannot supply new ones. |
+| Planning Application Radar | Idox Public Access terms restrict commercial reuse of portal content. Viable **only** with a licensed planning feed, not by scraping. |
+
+The headline verified number, and the one worth leading with in the room:
+**786 buildings in West Yorkshire are under a live fire safety enforcement notice
+right now**, 549 served in the last twelve months, 604 of the 1,440 on record in
+premises types Faelsafe already works in. Measured from the NFCC register, not
+estimated. The re-run script is in the verification log.
+
 ## Before presenting
 
 - [ ] Read `/vibe-coding` and `/opportunities` aloud as the MD. Anything requiring
       technical knowledge to understand gets rewritten.
-- [ ] Sanity-check the fifteen ideas against what Faelsafe actually runs today — some may
-      already be covered by their existing job management software.
+- [ ] Sanity-check ideas 1–10 against what Faelsafe actually runs today — some may
+      already be covered by their existing job management software. (Ideas 11–15 are
+      externally verified; 1–10 depend on their internal setup and are not.)
+- [ ] Open the site on a phone. Layouts are verified from 500px up but never on a
+      real handset.
 - [ ] Decide whether to leave the accreditation badges in `/website/demo`.
+- [ ] Note the site is `noindex` — the link works for anyone you send it to but
+      won't appear in a search for "Faelsafe". Remove `robots` in `app/layout.tsx`
+      to change that.

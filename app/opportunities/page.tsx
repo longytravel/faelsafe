@@ -428,12 +428,13 @@ export default function Opportunities() {
                   <p>
                     Ideas built on public data are easy to write and easy to get
                     wrong. So each source was tested against the live service, and
-                    two of our original five didn&apos;t survive it — a competitor
+                    three of our original five didn&apos;t survive it — a competitor
                     tracker that would have meant scraping registers whose owners
-                    explicitly ask you not to, and a territory map that leaned on a
-                    government register deliberately built to prevent exactly that
-                    kind of bulk lookup. Both were replaced with sources we could
-                    actually stand behind.
+                    explicitly ask you not to, a territory map leaning on a
+                    government register deliberately built to prevent that kind of
+                    bulk lookup, and a planning radar whose data we&apos;d have had
+                    to license rather than simply read. All three were replaced with
+                    sources we could stand behind.
                   </p>
                   <p className="text-ink font-medium">
                     We&apos;d rather tell you that now than have you find out in
