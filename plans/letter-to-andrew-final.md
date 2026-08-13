@@ -2,7 +2,9 @@ Dear Andrew,
 
 You asked the best question in your notes: **how do you create a commercial business development manager instead of hiring one?** This letter is our answer.
 
-Start here. **786 buildings in West Yorkshire are under a live fire safety enforcement notice today** — care homes, schools, hotels, warehouses, high-rise flats. Every one names the premises and the responsible company. It sits in a public register, free. Barbour took £12,000 a year and never showed it to you.
+Start here. **785 buildings in West Yorkshire are under a live fire safety enforcement notice** — care homes, schools, hotels, warehouses, high-rise flats. Every one names the premises and the responsible company. It sits in a public register, free. Barbour took £12,000 a year and never showed it to you.
+
+We know the number because we've already pulled the register — all 1,441 West Yorkshire records, as at 13 August. That part isn't a proposal; it's done, and we can show you it running.
 
 Before we get to what we'd build, three things you already own.
 
@@ -24,11 +26,15 @@ You wrote that new standards and bulletins get missed, that staying on top of th
 
 We went looking for something that already does this. **There isn't one.** BSI sell change-monitoring built for medical device manufacturers. Barbour sell it to health-and-safety managers, and it stops at telling you what changed — same group that took your £12,000, incidentally. Nothing tells a contractor *which of their own clients* a change affects and prompts them to advise them. That's the part that makes you money, and it's the part nobody sells.
 
-Ours watches the sources, spots a change, works out which of your clients have that system type, and puts a prompt in front of the right person:
+It would watch the sources, spot a change, work out which of your clients have that system type, and put a prompt in front of the right person:
 
 > *"BS 5839-1 revised — these eleven clients have that system — here's the advisory letter, send it?"*
 
-One limit worth knowing: British Standards are BSI copyright, so it can tell you a standard changed and point to the official summary, but not reproduce the text. Nor can anyone else.
+**And here is where we'd rather be straight with you than sell you something.** We've confirmed the gap in the market. We have *not* yet confirmed we can detect every change reliably — the most promising source, BSI's own standards update index, doesn't publish anything a machine can read cleanly, and the trade bodies vary. The other half depends on pulling your client list by system type out of BigChange, which is question two below.
+
+So we won't quote this one yet. What we'd do in the first fortnight is find out, and tell you either way — including if the answer is that it can't be done properly. It's the biggest prize here and it's your idea, which is exactly why it deserves a straight answer rather than an invoice.
+
+One limit that won't change: British Standards are BSI copyright, so it can tell you a standard changed and point to the official summary, but never reproduce the text. Nor can anyone else.
 
 ### 2. Your website
 
@@ -40,7 +46,11 @@ You said the offering leaned public-sector. Fair. The two strongest private-sect
 
 **Care homes.** Mostly private, with their own budgets, as you say. The CQC rates every one on "Safe" — which explicitly covers fire safety, maintenance checks and equipment records — and publishes the list free, monthly. A home marked down on Safe has an inspector returning and a problem to fix.
 
-**Enforcement notices.** You were right that some go nowhere, and you made the argument better than we did: if 30% come through, they're leads that would never have existed, and automated, there's no cost per lead. Of those 786 live notices, **549 were served in the last twelve months** and **604 are on high-rise flats, warehouses, care homes, hotels, schools and hospitals** — your customer base.
+**Enforcement notices.** You were right that some go nowhere, and you made the argument better than we did: if 30% come through, they're leads that would never have existed, and automated, there's no cost per lead. Of the 1,441 West Yorkshire records, **549 were served in the last twelve months** and **604 are on high-rise flats, warehouses, care homes, hotels, schools and hospitals** — your customer base.
+
+Both of these we have already built the hard part of. The care home list is a file the regulator publishes fresh every month — the current one is dated 12 August. **This is what we'd build first, because it's the one we can show you working rather than describe.**
+
+One practical note: where a notice names a company, normal business-to-business rules apply. Where it names an individual — and some do — marketing rules are stricter and the number needs screening first. We'd build that in from the start.
 
 ### 4. Live tender tracking
 
@@ -56,7 +66,9 @@ Finding tenders isn't your problem — you've solved that. Tracking live ones ac
 
 **Week 1** — Measurement on. Analytics fixed, website live. Everything after this is measurable; nothing before it is.
 
-**Weeks 2–4** — Build one tool. We'd suggest the standards watch. You get something real to use, not a specification.
+**Weeks 2–4** — The lead radar, working: enforcement notices and CQC-flagged care homes across your patch, filtered to your building types, landing somewhere you'll actually look. We start here because we've already proved the data.
+
+**In parallel** — We answer the standards watch question, and quote it or rule it out.
 
 **Week 5** — You decide: carry on, or stop. No notice period, no minimum term.
 
@@ -64,17 +76,19 @@ Then one new tool every three to four weeks, in whatever order you think is wort
 
 ## What it would cost
 
-We want Faelsafe as the reference client for this side of our business, so we've priced the first step to be an easy yes: prove it, then decide.
+We want Faelsafe as the reference client for this side of our business, so the first step is priced to be an easy yes: see it working, then decide.
 
 | | | |
 |---|---|---|
-| **A** | **Prove it first** *(our recommendation)* | **£750** for the first tool, all in — website and analytics included. Yours to keep either way. After a month, carry on or stop, nothing further owed. |
-| **B** | **A fixed programme** | **£6,000** for three tools over three months, plus the website. Half your BarbourABI spend, built around how you actually work. |
-| **C** | **Share the upside** | **£250/month** plus **5%** of first-year work traced to what we built — counted as jobs won from leads our tools flagged, logged in BigChange. We carry the risk with you. |
+| **A** | **Start with the proven part** *(our recommendation)* | **£2,500** — website live, analytics fixed, and the lead radar running on real data. Yours to keep either way. After a month you carry on or stop, nothing further owed. |
+| **B** | **A fixed programme** | **£9,000** for the above plus two more tools across three months. Below what BarbourABI cost you, for things built around how you actually work. |
+| **C** | **Share the upside** | **£500/month** plus **5%** of first-year work traced to what we built — counted as jobs won from leads our tools flagged, logged in BigChange. We carry the risk with you. |
+
+**The standards watch is quoted separately, once we've confirmed it's deliverable.** It's the most valuable thing on this list and we'd expect it to be the largest single piece of work — which is exactly why it shouldn't be bundled into a first invoice on a promise.
 
 Running costs are a few pounds a month. You own everything outright — no licence, no per-user fee, no annual renewal creeping up.
 
-For scale: a commercial business development manager is £45,000–£60,000 plus car and commission. Every option above sits a long way below that, and below what Barbour cost you.
+For scale: a commercial business development manager is £45,000–£60,000 plus car and commission. Every option above sits a long way below that.
 
 ## What good looks like
 
@@ -98,12 +112,10 @@ Half an hour, with whoever runs BigChange alongside you. Three things to settle:
 2. **Which tool first** — we'd say the standards watch, but it's your business.
 3. **Which option** — A, B or C.
 
-I'll call [Tuesday] morning to fix a time.
+Whenever suits you, and we'll come to Morley if that's easier. Bring the register up on the screen while we're there and you can see your own patch in it.
 
 Yours sincerely,
 
-**[YOUR NAME]**<br>
-[TITLE], [COMPANY]<br>
-[PHONE] · [EMAIL]
+&nbsp;
 
 *P.S. — Every figure above is written up with its source: the enforcement register, the care home lists, the standards bodies, and exactly what we could and couldn't confirm about BigChange. We'd rather you checked us.*
