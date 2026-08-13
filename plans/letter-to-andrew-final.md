@@ -24,7 +24,7 @@ Take out everything BigChange already does, and four things remain — all outsi
 
 You wrote that new standards and bulletins get missed, that staying on top of them is required for your accreditations, and that service cycles often tighten when standards publish — which increases your revenue, unless it goes missed.
 
-We went looking for something that already does this. **There isn't one.** BSI sell change-monitoring built for medical device manufacturers. Barbour sell it to health-and-safety managers, and it stops at telling you what changed — same group that took your £12,000, incidentally. Nothing tells a contractor *which of their own clients* a change affects and prompts them to advise them. That's the part that makes you money, and it's the part nobody sells.
+We went looking for something that already does this. **There isn't one.** BSI sell change-monitoring built for medical device manufacturers. Barbour sell it to health-and-safety managers, and it stops at telling you what changed. Nothing tells a contractor *which of their own clients* a change affects and prompts them to advise them. That's the part that makes you money, and it's the part nobody sells.
 
 It would watch the sources, spot a change, work out which of your clients have that system type, and put a prompt in front of the right person:
 
@@ -76,23 +76,38 @@ Then one new tool every three to four weeks, in whatever order you think is wort
 
 ## What it would cost
 
-We want Faelsafe as the reference client for this side of our business, so the first step is priced to be an easy yes: see it working, then decide.
+You told us the shape you want: start with a basic package, then add what earns its keep. That's exactly how we've priced it — with two differences, which we'll come to.
 
-| | | |
+### To start: £3,000, then £200 a month
+
+The £3,000 gets the website rebuilt, analytics working, and the lead radar live on real data — the enforcement notices, the care home ratings, refreshed and on your screen. The £200 a month keeps it running: feeds refreshing, site hosted, tools maintained, small fixes done without a quote.
+
+You'll recognise those numbers. They're BigChange's 2017 prices, deliberately — that deal worked, and you're still with them nine years on. But you also told us what came next: £200 became £1,200, one 'extra' at a time. So, two differences.
+
+**First, the whole menu is on this page, with prices.** Nothing gets revealed later. Every add-on is a one-off cost. The only thing that ever moves the monthly is an add-on needing its own data feed — and that's printed beside it before you say yes.
+
+| Add-on | One-off | Adds to monthly |
 |---|---|---|
-| **A** | **Start with the proven part** *(our recommendation)* | **£2,500** — website live, analytics fixed, and the lead radar running on real data. Yours to keep either way. After a month you carry on or stop, nothing further owed. |
-| **B** | **A fixed programme** | **£9,000** for the above plus two more tools across three months. Below what BarbourABI cost you, for things built around how you actually work. |
-| **C** | **Share the upside** | **£500/month** plus **5%** of first-year work traced to what we built — counted as jobs won from leads our tools flagged, logged in BigChange. We carry the risk with you. |
+| **Live tender tracking** — public-sector fire and electrical work, straight onto the radar | £750 | +£25 |
+| **Client compliance portal** — your clients log in, see their certificates and service dates | £1,500 | — |
+| **Extra radar source** — a new region or register you want watched | £350 | — |
+| **Standards-change watch** — which BS changes affect which of your clients | £950 | +£25 |
 
-**The standards watch is quoted separately, once we've confirmed it's deliverable.** It's the most valuable thing on this list and we'd expect it to be the largest single piece of work — which is exactly why it shouldn't be bundled into a first invoice on a promise.
+That last one isn't for sale yet. We won't take money for it until we've proven it works, and you'll see it running before you're asked.
 
-Running costs are a few pounds a month. You own everything outright — no licence, no per-user fee, no annual renewal creeping up.
+**Second, you own everything we build.** Code, data, website — outright, no licence, no per-user fee. The £200 isn't rent on the software; it's the running of it. Stop paying and you keep the lot, the feeds simply stop refreshing until someone — us or anyone else — switches them back on.
 
-For scale: a commercial business development manager is £45,000–£60,000 plus car and commission. Every option above sits a long way below that.
+No contract term. Cancel any month, keep everything, owe nothing further.
 
-## What good looks like
+For scale: the entire menu, everything on this page, running for a full year, comes to about **£9,000**. Less than a year of Barbour. About six weeks of a business development manager, once you've paid the salary, the car and the commission.
 
-Every tool gets one agreed number, reviewed monthly. If it hasn't moved, we say so and stop.
+## What the role actually does
+
+You asked how to create a business development manager instead of hiring one. So it's fair to ask what this one does, and how you'd hold it to account.
+
+Each month it finds the buildings in your patch with a legal problem and names who's responsible, flags the care homes the regulator has marked down on safety, and shows you where your enquiries actually came from. It doesn't sell, and it doesn't judge which lead is worth a phone call — that's still your people. It does the looking, so they don't have to.
+
+Every part of it gets one agreed number, reviewed monthly. If it hasn't moved, we say so and stop.
 
 | What we build | The number | Where it starts |
 |---|---|---|
@@ -110,7 +125,7 @@ Half an hour, with whoever runs BigChange alongside you. Three things to settle:
 
 1. **Three questions only BigChange can answer** — are you paying separately for the Booking Site module; can certificates be pulled from their standard interface or does that need their paid data product; and does a defect flagged on a worksheet already become a quote? The middle one decides whether a customer certificate portal is affordable.
 2. **Which tool first** — we'd say the standards watch, but it's your business.
-3. **Which option** — A, B or C.
+3. **Whether to start** — the £3,000 gets the radar and website live. Everything else stays on the menu until you want it.
 
 Whenever suits you, and we'll come to Morley if that's easier. Bring the register up on the screen while we're there and you can see your own patch in it.
 
